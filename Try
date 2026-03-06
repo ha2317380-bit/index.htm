@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do you like me?</title>
+<style>
+body{
+  text-align:center;
+  font-family: Arial, sans-serif;
+  margin-top:100px;
+  background-color:#fff0f5;
+}
+h2{
+  color:#e60073;
+}
+button{
+  padding:10px 20px;
+  font-size:18px;
+  margin:10px;
+  cursor:pointer;
+  border:none;
+  border-radius:5px;
+  background-color:#ff66b2;
+  color:white;
+}
+#no{
+  position:absolute;
+}
+</style>
+</head>
+<body>
+
+<h2>Do you like me? ❤️</h2>
+
+<button onclick="yes()">Yes</button>
+<button id="no">No</button>
+
+<script>
+function yes(){
+  alert("Thanks for Accepting ❤️");
+}
+
+// No button move
+document.getElementById("no").onmouseover = function(){
+  this.style.left = Math.random() * (window.innerWidth - 100) + "px";
+  this.style.top = Math.random() * (window.innerHeight - 100) + "px";
+}
+</script>
+
+</body>
+</html>
